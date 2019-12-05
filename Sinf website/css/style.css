@@ -104,6 +104,10 @@ main {
               width: 100%;
         }
 
+        .responsiveType {
+          width: 300px;
+        }
+
   
   }
 
@@ -154,13 +158,14 @@ main {
   }
 
   .firstCol{
-    margin-left: 10%;
-    width: 35%;
+    margin-left: 5%;
+    width: 30%;
     
   }
 
   .secondCol   {
     width: 30%;
+    display: inline-block;
     
   }
 
@@ -192,4 +197,35 @@ main {
     text-decoration: none;
     color: white;
   }
+
  
+ 
+
+  @media only screen and (max-width: 935px) {
+    footer {
+      height: 500px;
+      
+    }
+    .firstCol {
+      width: 50%;
+    }
+
+    .thirdCol {
+      margin-left: 10%;
+    }
+
+}
+
+#bio1 , #bio2 , #bio3, #bio4, #bio5 {
+  width: 20%;
+  display: none;
+ 
+  
+  
+}
+
+#biolist {
+  margin: 10px 0;
+  display: inline-block;
+}
+

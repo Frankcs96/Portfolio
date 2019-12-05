@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/9e812f5b35.js" crossorigin="anonymous"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <link rel="icon" href="img/favicon.ico">
-    <title>Quizz!</title>
+    <title>Bibliography</title>
 </head>
 
 <body>
@@ -20,11 +20,11 @@
     <nav>
         <div class="nav" id="mynav">
             <a href="index.html" class="link"><i class="fa fa-home"></i>Home</a>
-            <a href="history.html" class="link active"><i class="fa fa-home"></i>Home</a>
+            <a href="history.html" class="link"><i class="fa fa-home"></i>Home</a>
             <a href="types.html" class="link"><i class="fa fa-mouse"></i>Types</a>
             <a href="setup.html" class="link"><i class="fas fa-cogs"></i>Set up</a>
             <a href="brands.html" class="link"><i class="fas fa-copyright"></i>Brands</a>
-            <a href="bibliography.html" class="link"><i class="fas fa-book"></i>Bibliography</a>
+            <a href="bibliography.html" class="link active"><i class="fas fa-book"></i>Bibliography</a>
             <a href="quizz.html" class="link"><i class="fas fa-question"></i>Quizz</a>
             <a href="javascript:void(0);" class="icon" onclick="changeNavClass()">
                <i class="fa fa-bars"></i>
@@ -33,12 +33,59 @@
 
     </nav>
     <main>
-            <h1>Quizz</h1>
+            <h1>Bibliography</h1>
+            <hr>
+            <ul id="biolist">
+                <a style="color: black;" href="https://en.wikipedia.org/" target="_blank"><li id="bioli1" onmouseover="showImage('bio1')" onmouseout="hideImage('bio1')">Wikipedia </li></a> <br>
+                <a style="color: black;" href="https://red-dot-geek.com/" target="_blank"><li id="bioli2" onmouseover="showImage('bio2')" onmouseout="hideImage('bio2')">Red Dot Geek </li></a><br>
+                <a style="color: black;" href="https://www.pccomponentes.com/" target="_blank"><li id="bioli3" onmouseover="showImage('bio3')" onmouseout="hideImage('bio3')">PcComponentes </li></a><br>
+                <a style="color: black;" href="http://www.computinghistory.org.uk/" target="_blank"><li id="bioli4" onmouseover="showImage('bio4')" onmouseout="hideImage('bio4')">Computing History </li></a><br>
+                <a style="color: black;" href="https://www.youtube.com/watch?v=-yZUKJRBnBs&t=16s" target="_blank"><li id="bioli5" onmouseover="showImage('bio5')" onmouseout="hideImage('bio5')">Youtube </li></a><br>
+            </ul>
+
+            <img id="bio1" src="img/bio1.png" alt="wikipedia">
+            <img id="bio2" src="img/bio2.png" alt="reddot">
+            <img id="bio3" src="img/bio3.png" alt="pcComponentes">
+            <img id="bio4" src="img/bio4.png" alt="Computing history">
+            <img id="bio5" src="img/bio5.gif" alt="Youtube">
     </main>
     
     
 
+    <footer>
+        <div class="firstCol">
+            <P>Links:</P>
+          <ul class="listFooter">
+                <li><a href="index.html" class="link active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="history.html" class="link"><i class="fas fa-book-open"></i> History</a></li>
+                <li><a href="types.html" class="link"><i class="fa fa-mouse"></i>Types</a></li>
+                <li><a href="setup.html" class="link"><i class="fas fa-cogs"></i>Set up</a></li>
+                <li><a href="brands.html" class="link"><i class="fas fa-copyright"></i>Brands</a></li>
+                <li><a href="bibliography.html" class="link"><i class="fas fa-book"></i>Bibliography</a></li>
+                <li><a href="quizz.html" class="link"><i class="fas fa-question"></i>Quizz</a></li>
+          </ul>
+        </div>
 
+        <div class="secondCol">
+            <p>Socials:</p>
+                <ul class="socialList">
+                    <a href="#"><li><i class="fab fa-youtube"></i></li></a>
+                    <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+                    <a href="https://github.com/Frankcs96" target="_blank"><li><i class="fab fa-github"></i></li></a>
+                </ul>
+        </div>
+
+        <div class="thirdCol">
+            <p>Contact</p>
+            <ul class="socialList">
+              <li><i class="fas fa-at"></i>E-Mail: fcsuarez96@gmail.com</li>
+                <i class="fas fa-phone-square-alt"> +34 666 111 111</i></li>
+               <li><i class="fas fa-map-marker-alt"></i>Address: Calle Frederick Terman.</li>
+        </div>
+        
+
+        
+    </footer>
 
 
 </div>  

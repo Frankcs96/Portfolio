@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halloween</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
+    <script src="js/script.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <audio id="thunder">
+        <source src="sounds/thunder.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>  
+    
+    <audio id="wifeScreaming">
+        <source src="sounds/wifeScream.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>   
+
+    <audio id="pageFlip">
+        <source src="sounds/pageFlip.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>   
+
+    <audio id="meow">
+        <source src="sounds/Cat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>   
+
+    <audio  id="background">
+            <source src="sounds/Background.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio> 
+    
+    <audio id="song">
+        <source src="sounds/demonGirl.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>   
+    
+    <div id="startMenu">
+        <h1 id="title">afterlife's tales</h1>
+        <p id="desc">You are about to see an interactive story with a lot of sound effects and <br>
+            music, so use headphones for a better experience. Also dont forget<br> to put your name
+            on the box before pressing start.<br> Have fun and happy Halloween.
+            
+            
+        </p>
+
+        <h2 id="labelName">Name: </h2>
+        <input type="text" id="nameText"></input>
+        <button id="startBut" class="button" onclick="start(); sound('background'); sound('thunder')">Start</button>
+        <img id="pumpkin" src="img/pumpkin.gif" height="200">
+        
+    </div>
+    <div id="wrapper">
+        
+        <img id= "wife" src="img/wife1.gif" height="600">
+        <img id="skeleton" src="img/Skeleton1.gif" height="200">
+        <img id="daughter" src="img/girl.gif" height="100">
+        
+        <div class="speech-bubble">
+            
+            <p id="bubbleChat">Welcome Stranger... what are you doing in this graveyard? </p>
+            <button onclick="change(); sound('pageFlip')" id="continue">Continue...</button>
+
+        </div>
+
+        <div id="cat" onclick="change(); sound('meow')"></div>   
+        <div id="daughterRect" onclick="sound('song');show ('daughter'); change()"></div>
+        <div id ="wifeRect" onclick="sound('wifeScreaming');screamer('wife'); change()"></div>  
+        
+        
+    </div>
+
+    
+
+
+</body>
+
+</html>

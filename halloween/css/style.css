@@ -1,0 +1,227 @@
+@font-face {
+    font-family: titleFont;
+    src: url("../fonts/MetalMacabre.ttf");
+}
+
+#wrapper { 
+    
+    background-image: url("../img/wallPaper.jpg");    
+    width: 1200px;
+    height:845px;
+    margin:0px auto;
+    
+    position: relative;
+    opacity: 0;
+    
+        
+
+}
+
+#startMenu {
+    position: relative;
+    color: white;
+
+
+}
+
+#title {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 70px;
+    font-family: titleFont;
+    text-shadow: -4px 0 rgb(39, 39, 39), 0 4px rgb(39, 39, 39), 4px 0 rgb(39, 39, 39), 0 -4px rgb(39, 39, 39);
+
+}
+
+#desc {
+    position: absolute;
+    top: 230px;
+    left: 37%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -2px 0 rgb(39, 39, 39), 0 2px rgb(39, 39, 39), 2px 0 rgb(39, 39, 39), 0 -2px rgb(39, 39, 39);
+}
+
+#labelName {
+
+    position: absolute;
+    top: 350px;
+    left: 37%;
+    text-shadow: -2px 0 rgb(39, 39, 39), 0 2px rgb(39, 39, 39), 2px 0 rgb(39, 39, 39), 0 -2px rgb(39, 39, 39);
+}
+
+#nameText{
+
+    position: absolute;
+    top: 365px;
+    left: 44%;
+    z-index: 1;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+
+}
+
+.button {
+ background-color: rgb(88, 88, 88);
+  
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  left: 44%;
+  opacity: 0.6;
+  transition: 0.3s;
+  position: absolute;
+  top: 440px;
+  z-index: 1;
+  border-radius: 8px;
+ 
+    
+    
+  }
+
+  .button:hover {
+      opacity: 1;
+      cursor: pointer;
+  }
+
+ 
+
+body {
+   background-color: black  
+}
+
+
+#skeleton {
+
+   position: absolute;
+   top: 460px;
+   left: 500px;
+   -webkit-transition: opacity 8s ease-in-out;
+   -moz-transition: opacity 8s ease-in-out;
+   -ms-transition: opacity 8s ease-in-out;
+   -o-transition: opacity 8s ease-in-out;
+   transition: opacity 8s ease-in-out;
+   
+}
+
+#daughter {
+    visibility: hidden;
+    position: absolute;
+    top: 680px;
+    left: 110px;  
+    
+    
+}
+
+.speech-bubble {
+    position: absolute;
+    
+	background: white;
+    border-radius: .4em;
+    width: 200px;
+    top: 230px;
+    left: 520px;
+    border: black 2px solid;
+    text-shadow: -0.5px 0 red, 0 0.5px red, 0.5px 0 red, 0 -0.5px red;
+    font-family: 'Nosifer', cursive;
+    
+    
+    
+   
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -17.5px;
+    margin-bottom: -35px;
+    
+   
+    
+}
+
+#bubbleChat {
+    
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#continue {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 20px;
+  visibility: hidden;
+  border: none;
+   
+}
+
+#cat {
+
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    left: 810px;
+    top: 430px;
+    visibility: hidden;
+    cursor: pointer;
+    
+}
+
+#daughterRect {
+
+    position: absolute;
+    top: 700px;
+    left: 140px;
+    width: 60px;
+    height: 80px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#wifeRect {
+
+    position: absolute;
+    top: 660px;
+    left: 750px;
+    width: 60px;
+    height: 80px;
+    visibility: hidden;
+    
+    cursor: pointer;
+}
+
+#pumpkin {
+    position: absolute;
+    left: 40%;
+    top: 520px;
+}
+
+#wife {
+
+    
+    position: absolute;
+    width: 500;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    visibility: hidden;
+    
+    
+}

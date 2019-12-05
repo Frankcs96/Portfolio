@@ -80,8 +80,18 @@ function submitQuizz() {
 }
 
 
-  
 
+  function showImage(id) {
+    var element = document.getElementById(id);
+
+    element.style.display ="block";
+  }
+
+  function hideImage(id) {
+    var element = document.getElementById(id);
+
+    element.style.display = "none";
+  }
 
 
     
