@@ -1,0 +1,195 @@
+
+body {
+    background-color: rgb(46, 44, 44);
+    font-family: 'Share Tech', sans-serif;
+    
+}
+#container {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    
+}
+header{
+    position: relative;
+    background-image: url(../img/header1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    
+    
+}
+
+main {
+    margin: 14px;
+    line-height: 30px;
+    
+    
+}
+
+
+
+.nav {
+    background-color: rgb(214, 14, 14);
+    overflow: hidden;
+    height: 46px;
+    transition: .7s;
+    
+    
+    
+  }
+
+  .nav a {
+    float: left;
+    display: block;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    
+    
+  } 
+
+  .nav a:hover {
+    background-color: rgb(48, 48, 48);
+    color: rgb(207, 204, 204);  
+  }
+
+  .nav a.active {
+    background-color: rgb(29, 29, 29);
+    color: rgb(216, 11, 11);
+  }
+
+  .nav .icon {
+    display: none;
+  }
+
+  i {
+    margin-right: 15px;
+  }
+
+ 
+
+  @media screen and (max-width: 950px) {
+    .nav a {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+
+  @media screen and (max-width: 950px) {
+    .nav.responsive {
+      position: relative;
+      height: 330px;
+     
+    }
+    .nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+     
+    }
+
+    @media only screen and (max-width: 600px) {
+        #container {
+              width: 100%;
+        }
+
+  
+  }
+
+  
+  }
+
+  .button {
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+  #quizz {
+    display: none;
+
+  }
+
+  #victory {
+    display: none;
+    
+  }
+
+  #defeat {
+    display: none;
+    
+  }
+
+  iframe {
+    width: 40vw;
+    height: 30vw;
+  }
+
+  footer {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    height: 300px
+  }
+
+  footer div {
+    float:left;
+  }
+
+  .firstCol{
+    margin-left: 10%;
+    width: 35%;
+    
+  }
+
+  .secondCol   {
+    width: 30%;
+    
+  }
+
+  .listFooter li {
+    margin:15px 0;
+    list-style-type: none;
+  }
+  .socialList li {
+    margin:30px 0;
+  }
+
+  
+  .socialList {
+    list-style-type: none;
+    
+  }
+
+  .fab {
+    font-size: 40px;
+    transition: 0.5s;
+    
+   
+  }
+  .fab:hover {
+    font-size:60px;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+ 
