@@ -1,3 +1,5 @@
+
+// Making navbar responsive
 function changeNavClass() {
     var x = document.getElementById("mynav");
     if (x.className === "nav") {
@@ -7,7 +9,7 @@ function changeNavClass() {
     }
   }
 
-
+// timer for quizz
 function timer() {
   startquizz();
   var stopwatch = document.getElementById('timer');
@@ -25,6 +27,8 @@ function timer() {
     
 }
 
+
+//start button pressed (quizz)
 function startquizz() {
   document.getElementById('introQuizz').style.display = 'none';
   document.getElementById('quizz').style.display = 'block'; 
@@ -33,6 +37,8 @@ function startquizz() {
 var answers;
 var userAnswers;
 var score = 0;
+
+//validate answers when time is out or you click
 function submitQuizz() {
     document.getElementById('quizz').style.display = 'none';
     answers = ['b','a','a','b','b','a'];
@@ -80,7 +86,7 @@ function submitQuizz() {
 }
 
 
-
+// 2 functions to show/hide images on hover for bibliography
   function showImage(id) {
     var element = document.getElementById(id);
 
